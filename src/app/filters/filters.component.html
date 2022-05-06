@@ -1,0 +1,57 @@
+<form [formGroup]="filters">
+  <div class="control">
+    <label>Price from</label>
+    <input type="number" formControlName="from_price">
+  </div>
+
+  <div class="control">
+    <label>Price to</label>
+    <input type="number" formControlName="to_price">
+  </div>
+
+  <h4>Manufacturer</h4>
+  <ul formArrayName="manufacturer_id">
+    <li>
+      <input type="checkbox" [value]="0" formControlName="0">
+      <label>Bosch</label>
+    </li>
+
+    <li>
+      <input type="checkbox" [value]="1" formControlName="1">
+      <label>HP</label>
+    </li>
+
+    <li>
+      <input type="checkbox" [value]="2" formControlName="2">
+      <label>Asus</label>
+    </li>
+
+    <li>
+      <input type="checkbox" [value]="3" formControlName="3">
+      <label>Apple</label>
+    </li>
+  </ul>
+
+  <h4>Kind</h4>
+  <ul>
+    <li>
+      <input type="radio" [value]="'tv'" formControlName="kind">
+      <label>TV</label>
+    </li>
+
+    <li>
+      <input type="radio" [value]="'computer'" formControlName="kind">
+      <label>Computer</label>
+    </li>
+
+    <li>
+      <input type="radio" [value]="'washing machine'" formControlName="kind">
+      <label>Washing machine</label>
+    </li>
+
+    <li>
+      <input type="radio" [value]="'conditioner'" formControlName="kind">
+      <label>Conditioner</label>
+    </li>
+  </ul>
+</form>

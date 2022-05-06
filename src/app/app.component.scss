@@ -1,0 +1,14 @@
+#sidebar {
+  margin-top: 20px;
+  width: 30%;
+}
+
+#content {
+  width: 70%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
